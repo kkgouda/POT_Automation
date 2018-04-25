@@ -1,5 +1,9 @@
 package com.frameworkUtil;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 import org.apache.poi.util.StringUtil.StringsIterator;
 
 public class ExcelDataSheetUtil {
@@ -66,14 +70,38 @@ public class ExcelDataSheetUtil {
 		return charSequence;
 	}
 	
-	public String setCellData(String columnName, int iterationCount) {
+	public String setCellData(String columnName, int iterationCount,double value) {
 		
-//		workbook.getSheet(arg0)
+		workbook.getSheet("com.ftTest.Proposal");
+        boolean test=false;
 		
-		
-		
-		return columnName;
+    	if(sheet.getRow(1).getCell(23).getRichStringCellValue().getString().equalsIgnoreCase(columnName)) {
+    		sheet.getRow(iterationCount).createCell(23).setCellValue(value);
+            FileOutputStream outputStream;
+
+    		try {
+    			outputStream = new FileOutputStream(DAATA_SHEET_FILE_PATH);
+    			workbook.write(outputStream);
+    			test=true;
+    		} catch (IOException e) {
+    			e.printStackTrace();
+    		}
+    	}else if(sheet.getRow(1).getCell(24).getRichStringCellValue().getString().equalsIgnoreCase(columnName)) {
+    		sheet.getRow(iterationCount).createCell(24).setCellValue(value);
+            FileOutputStream outputStream;
+             test=false;
+    		try {
+    			outputStream = new FileOutputStream(DAATA_SHEET_FILE_PATH);
+    			workbook.write(outputStream);
+    			test=true;
+    		} catch (IOException e) {
+    			e.printStackTrace();
+    		}
+    	}
+
+		return test?" Write Success ":" Write Fail ";
 		
 	}
+
 
 }
