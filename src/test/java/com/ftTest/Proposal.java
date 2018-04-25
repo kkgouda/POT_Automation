@@ -3,18 +3,15 @@ package com.ftTest;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 
-import freemarker.core.DirectiveCallPlace;
+
 
 public class Proposal {
 
@@ -87,15 +84,17 @@ public class Proposal {
 					String MOTOR = excelDataSheetUtil.getData("Product", rowIncementor);
 
 					if (MOTOR.equalsIgnoreCase("MOTOR")) {
-						WebDriverWait wait=new WebDriverWait(driver,30);							
+						//WebDriverWait wait=new WebDriverWait(driver,30);							
+						Thread.sleep(3000);
 						driver.findElement(By.xpath(locatorsProperties.getPropertyValue("Motro"))).click();
-						wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locatorsProperties.getPropertyValue("Motro"))));	
+						//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locatorsProperties.getPropertyValue("Motro"))));	
 							
 						
 					} else if (MOTOR.equalsIgnoreCase("SME")) {
-						WebDriverWait wait=new WebDriverWait(driver,30);			
+						//WebDriverWait wait=new WebDriverWait(driver,30);			
+						Thread.sleep(3000);
 						driver.findElement(By.xpath(locatorsProperties.getPropertyValue("Sme"))).click();
-						wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locatorsProperties.getPropertyValue("Sme"))));
+						//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locatorsProperties.getPropertyValue("Sme"))));
      				}
 					
 					reporterUtil.updateReport(driver, "Scenario", "Product", "Pass");
@@ -165,11 +164,11 @@ public class Proposal {
 				
 
 				try {
-					WebDriverWait wait=new WebDriverWait(driver,50);
+					//WebDriverWait wait=new WebDriverWait(driver,50);
 					
 					driver.findElement(By.xpath(locatorsProperties.getPropertyValue("Aadhaarno1")))
 							.sendKeys(excelDataSheetUtil.getData("Aadhaar no.1", rowIncementor));
-					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locatorsProperties.getPropertyValue("Aadhaarno1"))));
+					//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locatorsProperties.getPropertyValue("Aadhaarno1"))));
 					driver.findElement(By.xpath(locatorsProperties.getPropertyValue("Aadhaarno2")))
 							.sendKeys(excelDataSheetUtil.getData("Aadhaar no.2", rowIncementor));
 					driver.findElement(By.xpath(locatorsProperties.getPropertyValue("Aadhaarno3")))
@@ -329,7 +328,7 @@ public class Proposal {
 
 					}
 
-					driver.findElement(By.xpath(locatorsProperties.getPropertyValue("CalculatePremium"))).click();
+					//driver.findElement(By.xpath(locatorsProperties.getPropertyValue("CalculatePremium"))).click();
 				
 					reporterUtil.updateReport(driver, "Scenario", "Proposal Information", "Pass");
 					
@@ -337,6 +336,8 @@ public class Proposal {
 					
 					e1.printStackTrace(); reporterUtil.updateReport(driver, "Scenario", "Proposal Information", "Fail");
 				}
+				
+				driver.findElement(By.xpath(locatorsProperties.getPropertyValue("CalculatePremium"))).click();
 
 				TimeUnit.SECONDS.sleep(30);
 
