@@ -161,7 +161,7 @@ public class Proposal {
 
 				// Proposal and Vehicle
 
-				//Thread.sleep(2000);
+				Thread.sleep(2000);
 				
 
 				try {
@@ -338,14 +338,14 @@ public class Proposal {
 					e1.printStackTrace(); reporterUtil.updateReport(driver, "Scenario", "Proposal Information", "Fail");
 				}
 
-				//TimeUnit.SECONDS.sleep(30);
+				TimeUnit.SECONDS.sleep(30);
 
 				// WebDriverWait wait=new WebDriverWait(driver,30);
 				// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/div/div[2]/div/div/div/div/div/form/div[6]/div/div/div[2]/div/div[13]/div/span[2]")));
 				
-				WebDriverWait wait = new WebDriverWait(driver, 50);
+				//WebDriverWait wait = new WebDriverWait(driver, 50);
 				driver.findElement(By.xpath(locatorsProperties.getPropertyValue("MoreAddon"))).click();
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locatorsProperties.getPropertyValue("MoreAddon"))));
+				//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locatorsProperties.getPropertyValue("MoreAddon"))));
 				
 				// Additional
 
