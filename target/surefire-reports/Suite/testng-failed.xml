@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" verbose="0" name="Failed suite [Suite]">
+  <test verbose="0" name="login test(failed)">
+    <classes>
+      <class name="com.ftTest.LoginFT">
+        <methods>
+          <include name="setInvocationCount"/>
+          <include name="loginFT"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ftTest.LoginFT -->
+    </classes>
+  </test> <!-- login test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

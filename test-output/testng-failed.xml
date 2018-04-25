@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [POT Suite]">
+  <test name="POT Login(failed)">
+    <classes>
+      <class name="com.ftTest.LoginFT">
+        <methods>
+          <include name="setInvocationCount"/>
+          <include name="loginFT"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ftTest.LoginFT -->
+    </classes>
+  </test> <!-- POT Login(failed) -->
+  <test name="POT Proposal(failed)">
+    <classes>
+      <class name="com.ftTest.Proposal">
+        <methods>
+          <include name="setup"/>
+          <include name="proposal"/>
+          <include name="setInvocationCount"/>
+        </methods>
+      </class> <!-- com.ftTest.Proposal -->
+    </classes>
+  </test> <!-- POT Proposal(failed) -->
+</suite> <!-- Failed suite [POT Suite] -->

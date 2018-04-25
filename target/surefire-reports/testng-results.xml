@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[</br><p>Balaji successfully loged in  </p><img src = "screenShots/1523207905113.png"/>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6419" started-at="2018-04-08T17:18:18Z" finished-at="2018-04-08T17:18:25Z">
+    <groups>
+    </groups>
+    <test name="login test" duration-ms="6419" started-at="2018-04-08T17:18:18Z" finished-at="2018-04-08T17:18:25Z">
+      <class name="com.ftTest.LoginFT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ftTest.LoginFT@29ca901e]" name="setup" is-config="true" duration-ms="5927" started-at="2018-04-08T22:48:13Z" finished-at="2018-04-08T22:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setInvocationCount(org.testng.ITestContext)[pri:0, instance:com.ftTest.LoginFT@29ca901e]" name="setInvocationCount" is-config="true" duration-ms="3" started-at="2018-04-08T22:48:18Z" finished-at="2018-04-08T22:48:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@70ab2d48]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setInvocationCount -->
+        <test-method status="PASS" signature="loginFT()[pri:0, instance:com.ftTest.LoginFT@29ca901e]" name="loginFT" duration-ms="6404" started-at="2018-04-08T22:48:18Z" finished-at="2018-04-08T22:48:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[</br><p>Balaji successfully loged in  </p><img src = "screenShots/1523207905113.png"/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginFT -->
+      </class> <!-- com.ftTest.LoginFT -->
+    </test> <!-- login test -->
+  </suite> <!-- Suite -->
+  <suite name="Suite (0)" duration-ms="72756" started-at="2018-04-08T17:18:25Z" finished-at="2018-04-08T17:19:38Z">
+    <groups>
+    </groups>
+    <test name="propose insurence qute test" duration-ms="72756" started-at="2018-04-08T17:18:25Z" finished-at="2018-04-08T17:19:38Z">
+      <class name="com.ftTest.Proposal">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ftTest.Proposal@20398b7c]" name="setup" is-config="true" duration-ms="78" started-at="2018-04-08T22:48:25Z" finished-at="2018-04-08T22:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setInvocationCount(org.testng.ITestContext)[pri:0, instance:com.ftTest.Proposal@20398b7c]" name="setInvocationCount" is-config="true" duration-ms="1" started-at="2018-04-08T22:48:25Z" finished-at="2018-04-08T22:48:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b068087]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setInvocationCount -->
+        <test-method status="PASS" signature="proposal()[pri:0, instance:com.ftTest.Proposal@20398b7c]" name="proposal" duration-ms="72754" started-at="2018-04-08T22:48:25Z" finished-at="2018-04-08T22:49:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proposal -->
+        <test-method status="PASS" signature="proposal()[pri:0, instance:com.ftTest.Proposal@20398b7c]" name="proposal" duration-ms="0" started-at="2018-04-08T22:49:38Z" finished-at="2018-04-08T22:49:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proposal -->
+        <test-method status="PASS" signature="proposal()[pri:0, instance:com.ftTest.Proposal@20398b7c]" name="proposal" duration-ms="1" started-at="2018-04-08T22:49:38Z" finished-at="2018-04-08T22:49:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proposal -->
+        <test-method status="PASS" signature="proposal()[pri:0, instance:com.ftTest.Proposal@20398b7c]" name="proposal" duration-ms="0" started-at="2018-04-08T22:49:38Z" finished-at="2018-04-08T22:49:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proposal -->
+      </class> <!-- com.ftTest.Proposal -->
+    </test> <!-- propose insurence qute test -->
+  </suite> <!-- Suite (0) -->
+</testng-results>

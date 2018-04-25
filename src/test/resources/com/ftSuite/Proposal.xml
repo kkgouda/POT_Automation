@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+<suite thread-count="1" verbose="1" name="POT Suite" annotations="JDK" parallel="tests">         
+  
+  
+    
+  <test name="POT Login">
+  	 <classes>
+	   <class name="com.ftTest.LoginFT"/>
+	 </classes>	
+   </test>
+   
+  <test name="POT Proposal">
+     <classes>
+       <class name="com.ftTest.Proposal"/>
+     </classes>
+   </test>
+</suite>
+
+
+
+
+
+
